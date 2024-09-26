@@ -1,0 +1,6 @@
+<div *ngIf="character">
+    <h2>{{ character.name }} - Appears in Episodes:</h2>
+    <ul>
+      <li *ngFor="let episode of episodes">{{ episode }}</li>
+    </ul>
+  </div>

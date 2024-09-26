@@ -1,0 +1,121 @@
+body {
+  background-color: #2a2a2a; 
+  font-family: 'Arial', sans-serif; 
+  color: #b2e65f; 
+  margin: 0;
+  padding: 0;
+}
+
+.character-card {
+  border: 2px solid #39ff14; 
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  background-color: #3a3a3a; 
+  box-shadow: 0 4px 8px rgba(57, 255, 20, 0.4); 
+  border-radius: 10px; 
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.character-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); 
+}
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #b2e65f; 
+}
+
+.select-button {
+  background-color: #4caf50; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.select-button:hover {
+  background-color: #66bb6a; 
+}
+
+.selected-character-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); 
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.selected-character-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #39ff14;
+}
+
+.selected-character-details {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #b2e65f; 
+  font-weight: bold;
+}
+
+.episode-list {
+  list-style-type: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  border: 2px solid #39ff14; 
+  background-color: #3a3a3a; 
+}
+
+.episode-item {
+  margin: 5px 0;
+  text-align: center;
+  padding: 10px;
+  background-color: #4caf50; 
+  color: #ffffff; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.episode-item:hover {
+  background-color: #66bb6a;
+}
+
+.back-button {
+  margin-top: 20px;
+  background-color: #39ff14;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #66bb6a;
+}
